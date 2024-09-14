@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brown Cow</title>
+</head>
+<body>
+    <h1>This is a Brown Cow</h1>
+
+    <!-- Input field to enter cow code -->
+    <input type="text" id="code_cows" placeholder="Enter cow code" required>
+    
+    <!-- Button to make milk -->
+    <button id="makeMilkButton" type="button">make milk</button>
+
+    <button id="backButton" type="button">back</button>
+
+    <!-- Output areas -->
+    <p id="error" style="color: red;"></p>
+    <p id="milkOutput"></p>
+
+    <!-- Include JavaScript files -->
+    <script src="controller.js" type="module"></script>
+    <script src="cal_brown_cows.js" type="module"></script>
+</body>
+</html>

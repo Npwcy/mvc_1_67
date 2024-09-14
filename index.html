@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to our farm</title>
+</head>
+<body>
+    <h1>Enter cow code</h1>
+    <form id="dataForm" onsubmit="event.preventDefault(); handleFormSubmit();">
+        
+        <label for="pip">Code</label><br>
+        <input type="text" id="code_cows" name="code_cows" pattern="^[1-9][0-9]{7}$"  title="wrong password" required><br>
+        <small>enter code 8 digit and first digit not 0</small><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="error" style="color: red;"></p>
+
+    <script src="controller.js"></script>
+</body>
+</html>
